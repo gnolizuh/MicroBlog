@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WelcomeControl</servlet-name>
+    <servlet-class>ruc.WelcomeControl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUser</servlet-name>
+    <servlet-class>ruc.AddUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckUserExist</servlet-name>
+    <servlet-class>ruc.CheckUserExist</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IsUserLogin</servlet-name>
+    <servlet-class>ruc.IsUserLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddPost</servlet-name>
+    <servlet-class>ruc.AddPost</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogOut</servlet-name>
+    <servlet-class>ruc.LogOut</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchUser</servlet-name>
+    <servlet-class>ruc.SearchUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchBlog</servlet-name>
+    <servlet-class>ruc.SearchBlog</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WelcomeControl</servlet-name>
+    <url-pattern>/servlet/WelcomeControl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUser</servlet-name>
+    <url-pattern>/servlet/AddUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckUserExist</servlet-name>
+    <url-pattern>/servlet/CheckUserExist</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IsUserLogin</servlet-name>
+    <url-pattern>/servlet/IsUserLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPost</servlet-name>
+    <url-pattern>/servlet/AddPost</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogOut</servlet-name>
+    <url-pattern>/servlet/LogOut</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchUser</servlet-name>
+    <url-pattern>/servlet/SearchUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchBlog</servlet-name>
+    <url-pattern>/servlet/SearchBlog</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>ruc.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>UserInfo</servlet-name>
+    <servlet-class>ruc.UserInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserInfo</servlet-name>
+    <url-pattern>/servlet/UserInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DoFriendShip</servlet-name>
+    <servlet-class>ruc.DoFriendShip</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DoFriendShip</servlet-name>
+    <url-pattern>/servlet/DoFriendShip</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+        <servlet-name>AddComment</servlet-name>
+        <servlet-class>ruc.AddComment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddComment</servlet-name>
+        <url-pattern>/servlet/AddComment</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>getUserBlog</servlet-name>
+        <servlet-class>ruc.GetUserBlog</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getUserBlog</servlet-name>
+        <url-pattern>/servlet/GetUserBlog</url-pattern>
+    </servlet-mapping>
+</web-app>
